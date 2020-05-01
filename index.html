@@ -1,11 +1,17 @@
-<script src="unicoder.js"></script>
-<script src="script.js"></script>
-
-
-<div id="input" width="100%" contenteditable="true" style="border: 1px solid blue;"></div>
-
-<div id="output"></div>
-<button id="bold" onclick="getSelectionHtml('bold sans');">bold</button>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <button id="bold" onclick="getSelectionHtml('bold sans');">bold</button>
 <button id="italic" onclick="getSelectionHtml('italic sans');">italic</button>
+        <button id="share" onclick="share()">share</button>
+<br><br><br><br><br>
+        <div id="input" width="100%" contenteditable="true" style="border: 1px solid blue;"></div>
 
-<button id="share" onclick="share()">share</button>
+        <div id="output"></div>
+        <script src="unicoder.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
+
