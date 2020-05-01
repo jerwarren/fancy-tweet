@@ -25,9 +25,6 @@ function getSelectionHtml(type) {
 }
 
 function share() {
-    intent = "intent:#Intent;action=android.intent.action.SEND;type=text/plain;S.android.intent.extra.TEXT=";
-    content = document.getElementById('input').innerHTML;
-    window.open(intent + encodeURIComponent(content) + ";end");
 
     if (navigator.share) {
         navigator.share({
