@@ -28,8 +28,9 @@ function share() {
 
     if (navigator.share) {
         navigator.share({
+          title: 'facy test',
           text: document.getElementById('input').innerHTML,
-          url: '',
+          url: 'http://foo.com',
         })
           .then(() => console.log('Successful share'))
           .catch((error) => console.log('Error sharing', error));
