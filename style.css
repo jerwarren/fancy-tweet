@@ -29,9 +29,10 @@ body {
     color: rgba(196, 195, 195, 0.6);
     font-weight: 400;
     /* padding: 2px; */
-    position: absolute;
-    right: 15px;
+    margin-top: 15px;
+    right: 0;
     width: 50px;
+    float: right;
 }
 
 #count.low {
@@ -42,7 +43,7 @@ body {
     outline: none;
 }
 
-#bold, #italic {
+#bold, #italic, #boldItalic {
     float: left;
     width: 90px;
     height: 32px;
@@ -53,10 +54,11 @@ body {
     margin-top: 10px;
     width: 120px;
     height: 32px;
+    float: left;
 }
 
 h1 {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-size: 16vw;
     font-weight: 100;
     text-align: center;
@@ -71,4 +73,11 @@ h1 {
 .tweet {
     color: #55acee;
     font-style: italic;
+}
+
+.description {
+    font-size: 20px;
+    margin-top: 40px;
+    color: rgba(255,255,255,0.8);
+    font-weight: 200;
 }

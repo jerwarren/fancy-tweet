@@ -1,23 +1,30 @@
 <html>
+    <title>Tweet Fancy</title>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="style.css" rel="stylesheet" type="text/css" media="all">
     </head>
     <body>
-        <h1><span class="tweet">Tweet</span> <span class="fancy">Fancy</span> </h1>
+        <h1><span class="tweet">Tweet</span> <span class="fancy">Fancy</span></h1>
+
         <div class="wrapper">
             <div class="innerWrapper">
-                <button id="bold" onclick="getSelectionHtml('bold sans');">𝗯𝗼𝗹𝗱</button>
+                <button id="bold" onclick="getSelectionHtml('bold sans');">bold</button>
                 <button id="italic" onclick="getSelectionHtml('italic sans');">italic</button>
-                <div id="count">280</div>
-            </div>
+                <button id="boldItalic" onclick="getSelectionHtml('bold italic sans');">bold & italic</button>
+            </div>    
             <div id="input" width="100%" contenteditable="true" onkeyup="count()"></div>
-            <button id="share" onclick="share()">Tweet this</button>
+            <div class="innerWrapper">
+                <button id="share" onclick="share()">Tweet this</button><div id="count">280</div>
+            </div>
+            <div class="description">
+                Select the text you wish to style and click the button that corresponds with style you'd like to apply.
+            </div>
         </div>
 
         <script src="unicoder.js"></script>
         <script src="script.js"></script>
-        
+
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164896254-2"></script>
         <script>
