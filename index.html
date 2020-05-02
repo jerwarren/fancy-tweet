@@ -1,15 +1,20 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet" type="text/css" media="all">
     </head>
     <body>
-        <button id="bold" onclick="getSelectionHtml('bold sans');">bold</button>
-<button id="italic" onclick="getSelectionHtml('italic sans');">italic</button>
-        <button id="share" onclick="share()">share</button>
-<br><br><br><br><br>
-        <div id="input" width="100%" contenteditable="true" style="border: 1px solid blue;"></div>
-
-        <div id="output"></div>
+        <h1><span class="tweet">Tweet</span> <span class="fancy">Fancy</span> </h1>
+        <div class="wrapper">
+            <div class="innerWrapper">
+                <button id="bold" onclick="getSelectionHtml('bold sans');">𝗯𝗼𝗹𝗱</button>
+                <button id="italic" onclick="getSelectionHtml('italic sans');">italic</button>
+                <div id="count">280</div>
+            </div>
+            <div id="input" width="100%" contenteditable="true" onkeyup="count()"></div>
+            <button id="share" onclick="share()">Tweet this</button>
+        </div>
+        
         <script src="unicoder.js"></script>
         <script src="script.js"></script>
     </body>

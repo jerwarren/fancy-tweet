@@ -1,0 +1,74 @@
+body {
+    background-color: rgb(68, 68, 68);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+
+}
+
+.wrapper {
+    padding: 15px;
+    position: relative;
+}
+
+.innerWrapper {
+    text-align: right;
+    height: 25px;
+}
+
+#input {
+    width: auto;
+    padding: 10px;
+    color: black;
+    height: 200px;
+    font-size: 19px;
+    background-color: rgb(192, 192, 192);
+    border-radius: 5px;
+    font-weight: 400;
+}
+
+#count {
+    color: rgba(196, 195, 195, 0.6);
+    font-weight: 400;
+    /* padding: 2px; */
+    position: absolute;
+    right: 15px;
+    width: 50px;
+}
+
+#count.low {
+    color: rgba(239, 97, 97, 0.6);
+}
+
+#input:focus {
+    outline: none;
+}
+
+#bold, #italic {
+    float: left;
+    width: 90px;
+    height: 32px;
+    margin-top: -15px;
+}
+
+#share {
+    margin-top: 10px;
+    width: 120px;
+    height: 32px;
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-size: 16vw;
+    font-weight: 100;
+    text-align: center;
+    width: 100%;
+    margin-top: -10px;
+}
+.fancy {
+    color: white;
+    font-weight: 900;
+}
+
+.tweet {
+    color: #55acee;
+    font-style: italic;
+}
