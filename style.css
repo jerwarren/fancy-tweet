@@ -90,9 +90,3 @@ h1 {
     color: rgba(255,255,255,0.8);
     font-weight: 200;
 }
-
-@media screen and (max-width: 600px) {
-    .wrapper {
-        width: 100%;
-    }
-}
