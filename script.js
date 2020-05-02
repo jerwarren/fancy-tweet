@@ -71,7 +71,7 @@ function share() {
             .then(() => console.log('Successful share'))
             .catch((error) => console.log('Error sharing', error));
         } else {
-            window.open('https://twitter.com/intent/tweet?text='+encodeURIComponent(message));
+            window.open('https://twitter.com/compose/tweet?text='+encodeURIComponent(message));
         }
       }
 }

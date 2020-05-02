@@ -5,15 +5,20 @@
         <link href="style.css" rel="stylesheet" type="text/css" media="all">
     </head>
     <body>
-        <h1><span class="tweet">Tweet</span> <span class="fancy">Fancy</span></h1>
+        
 
         <div class="wrapper">
+            <h1>
+                <span class="tweet">Tweet</span>&nbsp;<span class="fancy">Fancy</span>
+            </h1>
             <div class="innerWrapper">
                 <button id="bold" onclick="getSelectionHtml('bold sans');">bold</button>
                 <button id="italic" onclick="getSelectionHtml('italic sans');">italic</button>
                 <button id="boldItalic" onclick="getSelectionHtml('bold italic sans');">bold & italic</button>
             </div>    
-            <div id="input" width="100%" contenteditable="true" onkeyup="count()"></div>
+            <div id="input" width="100%" contenteditable="true" onblur="count()" onkeyup="count()">
+                Type your tweet here...
+            </div>
             <div class="innerWrapper">
                 <button id="share" onclick="share()">Tweet this</button><div id="count">280</div>
             </div>

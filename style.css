@@ -7,6 +7,10 @@ body {
 .wrapper {
     padding: 15px;
     position: relative;
+    max-width: 400px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .innerWrapper {
@@ -45,9 +49,15 @@ body {
 
 #bold, #italic, #boldItalic {
     float: left;
-    width: 90px;
     height: 32px;
     margin-top: -15px;
+    width: 33.33%
+}
+
+button {
+    text-transform: uppercase;
+    font-size: 8px;
+    font-weight: 900;
 }
 
 #share {
@@ -58,12 +68,12 @@ body {
 }
 
 h1 {
-    margin-bottom: 20px;
-    font-size: 16vw;
+    margin-bottom: 50px;
+    font-size: 3em;
     font-weight: 100;
     text-align: center;
     width: 100%;
-    margin-top: -10px;
+    margin-top: 0px;
 }
 .fancy {
     color: white;
