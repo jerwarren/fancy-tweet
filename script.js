@@ -13,6 +13,8 @@ var isIOS = (/iPad|iPhone|iPod/.test(navigator.userAgent) ||
 
 var isAndroid = (/android/i.test(navigator.userAgent));
 
+selectText("input");
+
 if (isIOS) {
     console.log("ios");
     shareButton.innerText = "Post to Twitter";
@@ -58,6 +60,25 @@ function count() {
     }
     
 }
+
+function selectText(element) {
+    var doc = document
+        , text = doc.getElementById(element)
+        , range, selection
+    ;    
+    if (doc.body.createTextRange) { //ms
+        range = doc.body.createTextRange();
+        range.moveToElementText(text);
+        range.select();
+    } else if (window.getSelection) { //all others
+        selection = window.getSelection();        
+        range = doc.createRange();
+        range.selectNodeContents(text);
+        selection.removeAllRanges();
+        selection.addRange(range);
+    }
+}
+
 function share() {
     message = document.getElementById('input').innerText;
     if (navigator.share) {
